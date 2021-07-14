@@ -15,11 +15,10 @@ class inspire {
      * @return object Quote.
      */
     public static function wisdom(): quote {
-        return new quote(
-            'Stoicisim',
-            'We suffer more in imagination than in reality.',
-            'Seneca'
-        );
+        $quotes = json_decode(file_get_contents(__DIR__ . '/../db/quotes.json'));
+        $quote = $quotes[array_rand($quotes)];
+
+        return quote::from_object($quote);
     }
 
 }

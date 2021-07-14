@@ -12,6 +12,16 @@ defined('MOODLE_INTERNAL') || die();
 class quote {
 
     /**
+     * Create a quote from a plain object.
+     *
+     * @param object $data Object quote data.
+     * @return quote
+     */
+    public static function from_object(object $data): quote {
+        return new quote($data->genre, $data->text, $data->author);
+    }
+
+    /**
      * @var string
      */
     public $genre;
