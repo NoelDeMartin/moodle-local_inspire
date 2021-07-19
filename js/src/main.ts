@@ -1,4 +1,3 @@
-<?php
 // (C) Copyright 2021 Moodle Pty Ltd.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,25 +12,9 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-namespace local_inspire;
+import InspireHandler from './handlers/mainmenu-inspire';
+import InspirePage from './pages/inspire';
 
-defined('MOODLE_INTERNAL') || die();
+registerMainMenuTabRoute('inspire', InspirePage);
 
-/**
- * Inspire.
- */
-class inspire {
-
-    /**
-     * Get a random quote.
-     *
-     * @return object Quote.
-     */
-    public static function wisdom(): quote {
-        $quotes = json_decode(file_get_contents(__DIR__ . '/../db/quotes.json'));
-        $quote = $quotes[array_rand($quotes)];
-
-        return quote::from_object($quote);
-    }
-
-}
+CoreMainMenuDelegate.registerHandler(new InspireHandler);

@@ -1,0 +1,28 @@
+<ion-card>
+    <ion-card-content *ngIf="!quote" class="ion-text-center">
+        <ion-spinner slot="center"></ion-spinner>
+    </ion-card-content>
+
+    <ng-container *ngIf="quote">
+        <ion-card-header>
+            <ion-card-title>{{ quote.genre }}</ion-card-title>
+        </ion-card-header>
+
+        <ion-card-content>
+            {{ quote.text }}
+        </ion-card-content>
+
+        <ion-item>
+            <ion-label slot="end" class="ion-text-right">
+                <i>{{ quote.author }}</i>
+            </ion-label>
+        </ion-item>
+    </ng-container>
+</ion-card>
+
+<div class="ion-padding">
+    <ion-button expand="block" (click)="refreshQuote()">
+        <ion-icon slot="start" name="refresh"></ion-icon>
+        {{ 'plugin.local_inspire.refresh' | translate }}
+    </ion-button>
+</div>

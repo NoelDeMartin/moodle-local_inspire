@@ -1,0 +1,11 @@
+{
+  "name": "moodle-local_inspire",
+  "private": true,
+  "scripts": {
+    "dev": "esbuild src/main.ts --bundle --outdir=dist --loader:.html=text --watch",
+    "prod": "esbuild src/main.ts --bundle --outdir=dist --loader:.html=text --minify"
+  },
+  "devDependencies": {
+    "esbuild": "^0.12.15"
+  }
+}

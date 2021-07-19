@@ -1,0 +1,33 @@
+{{=<% %>=}}
+
+<ion-card>
+    <ng-container>
+        <ion-card-header>
+            <ion-card-title><% quote.genre %></ion-card-title>
+        </ion-card-header>
+
+        <ion-card-content>
+            <% quote.text %>
+        </ion-card-content>
+
+        <ion-item>
+            <ion-label slot="end" class="ion-text-right">
+                <i><% quote.author %></i>
+            </ion-label>
+        </ion-item>
+    </ng-container>
+</ion-card>
+
+<div class="ion-padding">
+    <ion-button
+        expand="block"
+        core-site-plugins-new-content
+        component="local_inspire"
+        method="render_inspire_static"
+        [samePage]="true"
+        [preSets]="{ getFromCache: 0 }"
+    >
+        <ion-icon slot="start" name="refresh"></ion-icon>
+        {{ 'plugin.local_inspire.refresh' | translate }}
+    </ion-button>
+</div>

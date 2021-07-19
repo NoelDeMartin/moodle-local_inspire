@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "esnext",
+        "moduleResolution": "node",
+        "strict": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "experimentalDecorators": true,
+        "baseUrl": "./",
+        "paths": {
+            "@moodlehq/moodle-app": ["./lib/index.ts"]
+        }
+    },
+    "include": [
+        "src/**/*.ts",
+        "lib/**/*.ts"
+    ]
+}
