@@ -1,6 +1,6 @@
 # Inspire plugin for Moodle
 
-This plugin is a proof of concept to investigate some advanced patterns for the [Moodle App](https://github.com/moodlehq/moodleapp). The main goal was to explore how to write a plugin using similar tooling to the one used to develop the app. The plugin adds a couple of sections in the main menu that do the same thing: showing random inspirational quotes. One section is written using the standard approach (mustaches templates and PHP), whilst the other is written more in line to what developing code for the mobile app would look like (using TypeScript and components).
+This plugin is a proof of concept to investigate some advanced patterns for the [Moodle App](https://github.com/moodlehq/moodleapp). The main goal was to explore how to write a plugin using similar tooling to the one used to develop the app. The plugin adds a couple of sections in the main menu that do the same thing: showing random inspirational quotes. One section is written using the standard approach (mustache templates and PHP), whilst the other is written more in line to what developing code for the mobile app would look like (using TypeScript and components).
 
 This is what it looks like in action:
 
@@ -49,6 +49,6 @@ This approach could be taken further by allowing to declare reusable plugin comp
 
 ## Going further
 
-It is unlikely that this goes beyond a proof of concept for now, because this use-case seems to be in the minority. Most plugin developers are trying to adapt Moodle plugins to mobile, instead of writting app-specific plugins. So all of this is probably overkill for most plugin developers.
+It is unlikely that this goes beyond a proof of concept for now, because this use-case seems to be in the minority. Most plugin developers are trying to adapt Moodle plugins to mobile, instead of writting app-specific plugins. So doing this would probably require too much effort for little payoff.
 
 In any case, if you've got any comments or feedback about this, let us know!
