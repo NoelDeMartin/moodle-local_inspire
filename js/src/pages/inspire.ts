@@ -30,7 +30,7 @@ interface WSGetQuoteResponse {
     title: translate('inspire'),
     template,
 })
-export default class FoobarPage {
+export default class InspirePage {
 
     quote: Quote | null = null;
 
