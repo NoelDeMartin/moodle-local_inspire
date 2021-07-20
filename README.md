@@ -51,4 +51,4 @@ This approach could be taken further by allowing to declare reusable plugin comp
 
 It is unlikely that this goes beyond a proof of concept for now, because this use-case seems to be in the minority. Most plugin developers are trying to adapt Moodle plugins to mobile, instead of writting app-specific plugins. So doing this would probably require too much effort for little payoff.
 
-In any case, if you've got any comments or feedback about this, let us know!
+In any case, if you've got any comments or feedback about this, let us know [in the forum](https://moodle.org/mod/forum/discuss.php?d=424835)!
