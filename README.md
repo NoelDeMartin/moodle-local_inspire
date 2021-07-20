@@ -4,10 +4,7 @@ This plugin is a proof of concept to investigate some advanced patterns for the 
 
 This is what it looks like in action:
 
-<details>
-<summary>Video</summary>
-TODO
-</details>
+https://user-images.githubusercontent.com/1517677/126275397-88e8bcce-ab57-4a5e-949a-ae1989c3d8fd.mp4
 
 ## How to use it
 
